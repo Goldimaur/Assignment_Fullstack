@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TABLE TAGS</title>
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+
+
+</head>
+<style>
+    /* /space around text-cell spacing/ */
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    table {
+        border-collapse: collapse;
+        margin: auto;
+        width: 50%;
+    }
+    
+    table,
+    th,
+    tr,
+    td {
+        padding: 10px;
+        text-align: center;
+        font-size: 19px;
+           }
+    thead {
+        background-color:white;
+        color: rgb(10, 10, 10)
+        
+
+    }
+    
+    tfoot {
+        background-color: skyblue;
+       
+        color: white;
+        font-size: 15px;
+    }
+    
+    tbody tr:nth-child(even) {
+        background-color: rgb(178, 231, 187);
+    }
+    
+    tbody tr:nth-child(odd) {
+        background-color: rgb(210, 231, 240);
+    }
+   
+    .footer{
+        border-radius: 30px red;
+        color: white;
+        
+    }
+
+    .signup {
+
+                border-radius: 20px rgb(40, 40, 163)
+                ;padding: 10px;
+                
+                justify-content: center;
+            }
+     .signup td{
+        border-radius: 20px;
+        
+        
+     }       
+
+     .signup td:nth-child(:last-child){
+      
+        background-color: rgb(75, 73, 163);
+     }
+     span {
+    content: "\2714";
+    color:green;
+    font-size: 20px;
+}
+</style>
+
+<body>
+    <!-- <table border="1" cellpadding="5" cellspacing="10"> -->
+    <table>
+         <thead>
+            <!-- table head  -->
+            <!-- first row -->
+            <tr>
+                <th colspan="9" style="font-size: 20px;">SELECT YOUR PLAN</th>
+            </tr>
+        </thead>
+            <!-- secon row -->
+
+        <tbody>
+            <tr>
+                <td > <bold style="color: blue; font-size:30px;"> <i class="fa fa-calculator"></i>Basic</bold>
+                </td>
+                <td ><bold style="color: blue; font-size:30px;"> <i class="fa fa-calculator"></i>Plus</bold> </td>
+                <td> <bold style="color: blue; font-size:30px;"> <i class="fa fa-calculator"></i>Deluxe</bold></td>
+                <td><bold style="color: blue; font-size:30px;"> <i class="fa fa-calculator"></i>Pro</bold></td>
+            </tr>
+            <tr>
+
+
+                <td style="color: green;">
+                    Rs . 500/-
+                </td>
+                <td style="color: green;" > Rs . 1500/-</td>
+                <td style="color: green;"> RS.15000/-</td>
+                <td style="color: green;">Rs .15000/-</td>
+            </tr>
+            <tr>
+                <td>
+                    3 users
+                </td>
+                <td class="mywidth"> 5 users</td>
+                <td> 10 users</td>
+                <td> unlimited</td>
+            </tr>
+            <tr>
+                <td>
+                   10 Pages
+                </td>
+                <td class="mywidth">  25 Pages</td>
+                <td>  100 Pages</td>
+                <td>  unlimited</td>
+            </tr>
+            
+            <tr>
+                <td>
+                    10 sites
+                </td>
+                <td class="mywidth"> 25 sites</td>
+                <td> 100 sites</td>
+                <td>  unlimited</td>
+            </tr>
+            <tr>
+                <td>
+                    50 MB
+                </td>
+                <td class="mywidth"> 250 MB</td>
+                <td>1GB</td>
+                <td>  unlimited</td>
+            </tr>
+            <tr>
+                <td>
+                  included
+                </td>
+                <td class="mywidth">included</td>
+                <td>included</td>
+                <td>included</td>
+            </tr>
+            <tr>
+                <td>
+                    <span>&#10004;</span>
+                </td>
+                <td class="mywidth">  <span>&#10004;</span></td>
+                <td>  <span>&#10004;</span></td>
+                <td>	  <span>&#10004;</span></td>
+            </tr>
+            <tr>
+                <td>
+                    &#x274C;
+                </td>
+                <td > <span>&#10004;</span>
+                <td> <span>&#10004;</span</td>
+                <td>  <span>&#10004;</span></td>
+            </tr>
+            <tr>
+                <td>
+                    &#x274C;
+                </td>
+                <td class="mywidth">  <span>&#10004;</span></td>
+                <td>  <span>&#10004;</span></td>
+                <td>  <span>&#10004;</span></td>
+            </tr>
+            <tr>
+                <td>
+                    &#x274C;
+                </td>
+                <td class="mywidth"> &#x274C;</td>
+                <td>  <span>&#10004;</span></td>
+                <td>  <span>&#10004;</span></td>
+            </tr>
+            <tr>
+                <td>
+                    &#x274C;
+                </td>
+                <td class="mywidth">  &#x274C;</td>
+                <td> &#x274C;</td>
+                <td>  <span>&#10004;</span></td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr class="footer">
+                <td style="border-radius: 20px; background-color: rgb(75, 73, 163);" >
+                    <section class="signup">lkn</section>
+                </td>
+                <td style="border-radius: 20px; background-color: rgb(75, 73, 163);" >Sign Up</td>
+                <td style="border-radius: 20px;background-color: rgb(75, 73, 163);" >Sign Up</td>
+                <td style="border-radius: 20px;background-color: rgb(75, 73, 163);" >Sign Up</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+
+</html>
